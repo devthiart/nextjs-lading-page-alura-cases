@@ -1,5 +1,6 @@
-import PageTitle from '../src/components/PageTitle';
-import Link from '../src/components/Link';
+import FAQScreen from '../src/screens/FAQScreen';
+
+export default FAQScreen; 
 
 // SSG - Static Site Generation
 // SSR - Server Side Rendering
@@ -23,27 +24,4 @@ export async function getStaticProps() {
       faq
     }
   };
-}
-
-export default function FAQPages({ faq }) {
-  console.log("Roda no Navegador?");
-  return (
-    <div>
-      <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
-      <h1>Alura Cases - FAQ</h1>
-      <Link href="/" className="link">Voltar para Home</Link>
-      <ul>
-        {
-          faq.map(({ answer, question }) => (
-            <li key={ question }>
-              <article>
-                <h2>{ question }</h2>
-                <p>{ answer }</p>
-              </article>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  );
 }
