@@ -33,7 +33,7 @@ export default function Footer() {
             color: theme.colors.neutral[400],
           }}
         >
-          &copy; {new Date().getFullYear()} DevThiart. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} <a href="https://www.youtube.com/c/DevSoutinho">DevSoutinho</a> & <a href="https://github.com/devthiart">DevThiart</a>. Todos os direitos reservados.
         </Text>
       </Box>
     </Box>
